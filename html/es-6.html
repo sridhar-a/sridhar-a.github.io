@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES 6</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <h1><a href="/">Home</a></h1>
-    
-    <div id="clock" class="clock"></div>    
-
-    <hr>
-
-    <h1>ES 6</h1>
-
-    <h3>Area of the Circle <span class="p-5">(&Pi; r<sup>2</sup>)</span></h3>    
-    <p>
-        <span class="p-5">&Pi; = 3.14</span>        
-    </p>               
-    <p>
-        <span class="p-5">Radius (r) = </span>
-        <input type="text" id="radius" maxlength="4" class="w-35 p-5" autofocus />
-    </p>               
-    <p>
-        <input type="button" value="Calculate" id="calculate" class="p-5" onclick="calculate()" />
-    </p>               
-    <p>   
-        Area of the Circle: <span id="answer" class="w-75 p-5"></span>
-    </p>
-    
+    <div class="body-wrapper">
+        <h1><a href="../index.html">Home</a></h1>
+        <div id="clock" class="clock"></div>
+        <hr>
+        <h2>ES 6</h2>
+        <div class="contents-wrapper">
+            <h3>Area of the Circle <span class="p-5">(&Pi; r<sup>2</sup>)</span></h3>
+            <p>
+                <span class="p-5">&Pi; = 3.14</span>
+            </p>
+            <p>
+                <span class="p-5">Radius (r) = </span>
+                <input type="text" id="radius" maxlength="4" class="w-35 p-5 input-radius" autofocus>
+            <div id="msg" class="msg"></div>
+            </p>
+            <p>
+                <input type="button" value="Calculate" id="calculate" class="p-5" onclick="calculate()">
+            </p>
+            <p>
+                Area of the Circle:
+            <div id="answer" class="w-75 p-5 answer"></div>
+            </p>
+        </div>
+        <div class="footer">
+            <p>&copy <span id="year"></span> Sridhar</p>
+        </div>
+    </div>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

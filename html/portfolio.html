@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
-    <h1><a href="/">Home</a></h1>      
-
-    <div id="clock" class="clock"></div>
-    
-    <hr>
-
-    <h1>Portfolio</h1>    
-
-    <h2>Sridhar</h2> 
-    
-    <img class="img-profile" src="../images/Sridhar.png" alt="Sridhar">
-
+    <div class="body-wrapper">
+        <h1><a href="../index.html">Home</a></h1>
+        <div id="clock" class="clock"></div>
+        <hr>
+        <h2>Portfolio</h2>
+        <div class="topnav">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h2>I'm Sridhar</h2>
+                <p>| Freelancer |</p>
+            </div>
+        </div>
+        <div id="about" class="about-section">
+            <h2>About Me</h2>
+            <img class="img-profile" src="../images/sridhar.png" alt="Sridhar">
+            <p>Systematic and Consistent performer</p>
+            <p>Having good communication and presentation skills</p>
+            <p>Willingness to learn</p>
+            <p>Team facilitator, hard & smart worker</p>
+        </div>
+        <div id="contact" class="container contact-section">
+            <div class="contact-contents">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <form action="" method="post"
+                        onsubmit="alert('Form Submit section is Work in Progress'); return false;">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="others">Others</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Please write your needs or requirements."
+                            style="height:170px" required></textarea>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy <span id="year"></span> Sridhar</p>
+        </div>
+    </div>
     <script src="../js/script.js"></script>
 </body>
+
 </html>
