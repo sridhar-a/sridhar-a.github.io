@@ -24,7 +24,7 @@ function calculate() {
         answer.innerHTML = answerValue;
     } else {
         answer.innerHTML = "";
-        msg.innerHTML = "Please enter the Radius";
+        msg.innerHTML = "Please enter valid Radius";
         radius.focus();        
     }
 }
